@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A34AF1F1EB3F9B400A88556 /* ProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34AF1E1EB3F9B400A88556 /* ProductButton.swift */; };
+		1A34AF231EB3FE0100A88556 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34AF221EB3FE0100A88556 /* ProductsViewController.swift */; };
+		1A34AF251EB4107D00A88556 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34AF241EB4107D00A88556 /* MapViewController.swift */; };
 		1ADD1E4F1EB26B2D00C91BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD1E4E1EB26B2D00C91BAB /* AppDelegate.swift */; };
 		1ADD1E511EB26B2D00C91BAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADD1E501EB26B2D00C91BAB /* ViewController.swift */; };
 		1ADD1E541EB26B2D00C91BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD1E521EB26B2D00C91BAB /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A34AF1E1EB3F9B400A88556 /* ProductButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductButton.swift; sourceTree = "<group>"; };
+		1A34AF221EB3FE0100A88556 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		1A34AF241EB4107D00A88556 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1ADD1E4B1EB26B2D00C91BAB /* JBMedical2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBMedical2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD1E4E1EB26B2D00C91BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ADD1E501EB26B2D00C91BAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +103,12 @@
 		1ADD1E4D1EB26B2D00C91BAB /* JBMedical2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				1ADD1E4E1EB26B2D00C91BAB /* AppDelegate.swift */,
+				1A34AF241EB4107D00A88556 /* MapViewController.swift */,
+				1A34AF221EB3FE0100A88556 /* ProductsViewController.swift */,
 				1ADD1E501EB26B2D00C91BAB /* ViewController.swift */,
 				1ADD1E521EB26B2D00C91BAB /* Main.storyboard */,
-				1ADD1E551EB26B2D00C91BAB /* Assets.xcassets */,
-				1ADD1E571EB26B2D00C91BAB /* LaunchScreen.storyboard */,
-				1ADD1E5A1EB26B2D00C91BAB /* Info.plist */,
+				1A34AF1E1EB3F9B400A88556 /* ProductButton.swift */,
+				1ADD1E7C1EB26B5100C91BAB /* SupportingFiles */,
 			);
 			path = JBMedical2.0;
 			sourceTree = "<group>";
@@ -123,6 +129,17 @@
 				1ADD1E701EB26B2D00C91BAB /* Info.plist */,
 			);
 			path = JBMedical2.0UITests;
+			sourceTree = "<group>";
+		};
+		1ADD1E7C1EB26B5100C91BAB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD1E4E1EB26B2D00C91BAB /* AppDelegate.swift */,
+				1ADD1E551EB26B2D00C91BAB /* Assets.xcassets */,
+				1ADD1E571EB26B2D00C91BAB /* LaunchScreen.storyboard */,
+				1ADD1E5A1EB26B2D00C91BAB /* Info.plist */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A34AF1F1EB3F9B400A88556 /* ProductButton.swift in Sources */,
 				1ADD1E511EB26B2D00C91BAB /* ViewController.swift in Sources */,
+				1A34AF231EB3FE0100A88556 /* ProductsViewController.swift in Sources */,
+				1A34AF251EB4107D00A88556 /* MapViewController.swift in Sources */,
 				1ADD1E4F1EB26B2D00C91BAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +536,7 @@
 				1ADD1E751EB26B2D00C91BAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1ADD1E761EB26B2D00C91BAB /* Build configuration list for PBXNativeTarget "JBMedical2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +545,7 @@
 				1ADD1E781EB26B2D00C91BAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1ADD1E791EB26B2D00C91BAB /* Build configuration list for PBXNativeTarget "JBMedical2.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +554,7 @@
 				1ADD1E7B1EB26B2D00C91BAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

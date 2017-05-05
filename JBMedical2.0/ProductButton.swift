@@ -8,14 +8,23 @@
 
 import UIKit
 
-class ProductButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class ProductButton: UIButton
+{
+    var isNeeded: Bool = false
+    private let filled = UIImage(named: "filled")
+    private let unfilled = UIImage(named: "unfilled")
+    
+    public func select()
+    {
+        if !isNeeded
+        {
+            isNeeded = true
+            self.setImage(filled, for: .normal)
+        }
+        else
+        {
+            isNeeded = false
+            self.setImage(unfilled, for: .normal)
+        }
     }
-    */
-
 }
